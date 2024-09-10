@@ -10,12 +10,11 @@ package exercicio5;
  * @author aluno.saolucas
  */
 public class Exercicio5 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Funcionario gerente = new Gerente("Joao", 5000, 2000);
+        Funcionario programador = new Programador("Julia", 4000, 800);
+
+        System.out.println("Salário do Gerente " + gerente.getNome() + ": " + gerente.calcularSalario());
+        System.out.println("Salário do Programador " + programador.getNome() + ": " + programador.calcularSalario());
     }
-    
 }

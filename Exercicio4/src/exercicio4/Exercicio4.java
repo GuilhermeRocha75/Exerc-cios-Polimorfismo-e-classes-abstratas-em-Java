@@ -10,12 +10,14 @@ package exercicio4;
  * @author aluno.saolucas
  */
 public class Exercicio4 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       
+        Pagamento pagamentoCartao = new PagamentoCartao(1000);
+        Pagamento pagamentoBoleto = new PagamentoBoleto(1000);
+
+       
+        System.out.println("Valor final do pagamento com Cartão de Crédito: R$ " + pagamentoCartao.calcularValor());
+        System.out.println("Valor final do pagamento com Boleto: R$ " + pagamentoBoleto.calcularValor());
     }
-    
 }
+
